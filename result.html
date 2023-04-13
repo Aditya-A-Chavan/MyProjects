@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>QR Code successfully generated</h2>
+    <p>QR code image has been generated and saved as: <strong>{{ filename }}.png <br> Please find it in the following location on your PC <br></strong></p>
+    <h3>D:\Adi Autocad\PYthon QR\static</h3>
+    <img src="{{ url_for('static', filename=filename + '.png') }}" alt="QR Code">
+</body>
+</html>

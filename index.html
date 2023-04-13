@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>QR Code Generator</h1>
+    <form action="/generate" method="post">
+        <label for="data">Enter The data you want to encode in the QR code</code>:</label><br>
+        <input type="text" placeholder="Enter Data Here" id="data" name="data" required/><label>
+        <label for="filename">Enter filename for QR code:</label><br>
+        <input type="text" placeholder="Enter File Name Here" id="filename" name="filename" required/><label></label>
+        <input type="submit" value="Generate QR Code">
+    </form>
+</body>
+</html>
